@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {  
     box-sizing: border-box;  
     margin: 0;  
@@ -181,7 +185,7 @@ nav a {
 }
 
 .review{
-    height: fit-content;
+    height:fit-content;
     padding: 24px;
     border-radius: 16px;
     border: 1.5px solid #ffffff35;
@@ -257,3 +261,181 @@ footer button a{
     line-height: 24px;
 
 }
+
+
+@media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    header {
+      text-align: center;
+      padding: 0;
+    }
+  
+    .nav1 {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    nav li {
+      margin: 10px 0;
+    }
+  
+    .head {
+      margin-top: 50px;
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 80px;
+    }
+  
+    .about {
+      margin: 50px auto;
+      font-size: 20px;
+      text-align: center;
+    }
+  
+    .what-i-do {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .head-services {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+  
+    #impact {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .metrics {
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+    }
+  
+    .services {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .services img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .reviews {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 100px;
+    }
+  
+    .about {
+      margin: 70px auto;
+      font-size: 24px;
+    }
+  
+    .head-services {
+      gap: 20px;
+    }
+  
+    .services {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      row-gap: 20px;
+      width: 100%;
+      padding: 15px;
+    }
+  
+    #impact {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .metrics {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+    }
+  
+    .reviews {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+    }
+  }
+  
+ 
+  @media (min-width: 1366px) {
+    body {
+      font-size: 16px;
+    }
+  
+    .container {
+      width: 70%;
+    }
+  
+    .services {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .reviews {
+      grid-template-columns: repeat(3, 288px);
+      gap: 40px;
+    }
+  }
+
+  
+  .services section {
+    position: relative; 
+}
+
+.services img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer; 
+}
+
+.services img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+.services h3,
+.services p {
+    transition: transform 0.3s ease;
+}
+
+.services section:hover h3,
+.services section:hover p {
+    transform: translateY(10px); 
+}
+* {
+    transition: all 0.3s ease;
+}
+
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+header {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+

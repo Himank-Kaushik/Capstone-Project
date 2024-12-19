@@ -1,0 +1,259 @@
+* {  
+    box-sizing: border-box;  
+    margin: 0;  
+    padding: 0;  
+}  
+
+body {  
+    font-family: Arial, sans-serif;  
+    background-color: black;  
+    color: white;  
+}  
+
+header {  
+    text-align: center;  
+    padding: 0;
+}  
+
+.nav1{
+    padding:10px 0;
+}
+.head{
+    margin-top: 100px;
+    padding: 0;
+    width: 1352px;
+}
+
+h1 {  
+    font-size: 2.5em;  
+    margin-bottom: 10px;  
+}  
+
+nav {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 0px;  
+    margin-bottom: 100px;
+}  
+
+nav ul {  
+    list-style: none;  
+    display: flex;  
+}  
+
+nav li {  
+    margin: 0 15px;
+}  
+
+nav ul li:hover{
+    cursor: pointer;
+}
+
+nav a {  
+    color: white;  
+    text-decoration: none;  
+}  
+
+.about{
+    margin: 100px auto 100px 0;
+    font-size:28px;
+    font-weight: 400;
+}
+
+.what-i-do{
+    font-family: 'Hepta Slab';
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 0;
+    font-size: 28px;
+}
+.what-i-do>div{
+    flex: 1;
+}
+.head-services{
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.head-services>div{
+    flex: 1;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem 0;
+  }
+
+
+  #impact{
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 0;
+}
+
+.impact-title{
+    font-family: 'Hepta Slab';
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+}
+
+.metrics{
+    width: 648px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 48px;
+}
+
+.metric{
+    padding: 24px 0 48px 0;
+    border-top: 1.5px solid #ffffff35
+}
+
+.metric-count{
+    margin-bottom: 8px;
+    font-family: 'Hepta Slab';
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 52px;
+    text-align: left;
+}
+
+.metric-name{
+    font-family: 'Fira Sans';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 56px;
+    height: 1191px;
+    width: 1330px;
+    padding: 25px;
+}
+
+.services img{
+    border-radius: 5px;
+}
+
+.services h3{
+    color: #D7E4D7;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.services p{
+    color: #D1EBD19E;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+  #testimonials{
+    padding: 48px 0;
+}
+
+#testimonials > p{
+    margin-bottom: 48px;
+    font-family: Hepta Slab;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 52px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews{
+    overflow: hidden;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,288px);
+    column-gap: 50px;
+    margin-left: 20px;
+}
+
+.review{
+    height: fit-content;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1.5px solid #ffffff35;
+}
+
+.review-header{
+    margin-bottom: 16px;
+    display: flex;
+}
+
+.client-img{
+    margin: auto 12px auto 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.client-details{
+    margin: auto 0;
+}
+
+.client-name{
+    font-family: Fira Sans;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+}
+
+.client-designation{
+    font-family: Fira Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
+
+.review-content{
+    margin-left: 24px;
+    padding-left: 36px;
+    border-left: 1.5px solid #ffffff35;
+    font-family: Fira Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+footer { 
+    margin-top: 50px;
+    text-align: center;  
+    padding: 20px;  
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+}
+
+footer p{
+    color: #ffffff35;
+}
+footer button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: black;
+    border: 1px solid #FFFFFF29
+}
+footer button a{
+    text-decoration: none;
+    color: white;
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+
+}
